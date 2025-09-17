@@ -933,6 +933,7 @@ a:hover {
   }
   .llamar {
     display: flex;
+    flex-direction: column;
   }
   .llamar a {
     display: flex;
@@ -945,3 +946,4 @@ a:hover {
     background-color: rgb(88, 155, 0);
   }
 }
+
