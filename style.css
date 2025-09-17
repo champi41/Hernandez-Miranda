@@ -202,14 +202,22 @@ a:hover {
   gap: 20px;
 }
 .llamar {
+  width: min-content;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .llamar a {
+  justify-content: center;
   display: flex;
   align-items: center;
   padding: 10px;
   background-color: rgb(51, 89, 0);
   border-radius: 15px;
+  gap: 5px;
+}
+.llamar a img{
+  height: 30px;
 }
 .llamar a:hover {
   background-color: rgb(88, 155, 0);
@@ -416,6 +424,7 @@ a:hover {
   }
   .llamar {
     display: flex;
+    flex-direction: column;
   }
   .llamar a {
     display: flex;
@@ -585,19 +594,7 @@ a:hover {
     padding: 30px;
     gap: 20px;
   }
-  .llamar {
-    display: flex;
-  }
-  .llamar a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(51, 89, 0);
-    border-radius: 15px;
-  }
-  .llamar a:hover {
-    background-color: rgb(88, 155, 0);
-  }
+  
 }
 @media (max-width: 768px) {
   .main {
@@ -756,19 +753,7 @@ a:hover {
     padding: 30px;
     gap: 20px;
   }
-  .llamar {
-    display: flex;
-  }
-  .llamar a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(51, 89, 0);
-    border-radius: 15px;
-  }
-  .llamar a:hover {
-    background-color: rgb(88, 155, 0);
-  }
+
 }
 
 @media (max-width: 576px) {
@@ -931,19 +916,5 @@ a:hover {
     padding: 30px;
     gap: 20px;
   }
-  .llamar {
-    display: flex;
-    flex-direction: column;
-  }
-  .llamar a {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: rgb(51, 89, 0);
-    border-radius: 15px;
-  }
-  .llamar a:hover {
-    background-color: rgb(88, 155, 0);
-  }
+  
 }
-
