@@ -106,7 +106,7 @@ a:hover {
   align-items: stretch;
 }
 .especialidades div {
-  background-color: var(--color2);
+  background-color: black;
   color: white;
   font-size: 30px;
   display: flex;
@@ -148,7 +148,7 @@ a:hover {
   position: relative;
   background-size: cover;
   background-position: center;
-  padding: 150px 40px;
+  padding: 200px 40px;
   gap: 40px;
 }
 .general,
@@ -345,7 +345,7 @@ a:hover {
     align-items: stretch;
   }
   .especialidades div {
-    background-color: var(--color2);
+    background-color: black;
     color: white;
     font-size: 30px;
     display: flex;
@@ -503,7 +503,7 @@ a:hover {
     gap: 10px;
   }
   .especialidades div {
-    background-color: var(--color2);
+    background-color: black;
     color: white;
     font-size: 20px;
     display: flex;
@@ -656,7 +656,7 @@ a:hover {
     gap: 10px;
   }
   .especialidades div {
-    background-color: var(--color2);
+    background-color: black;
     color: white;
     font-size: 20px;
     display: flex;
@@ -810,7 +810,7 @@ a:hover {
     gap: 10px;
   }
   .especialidades div {
-    background-color: var(--color2);
+    background-color: black;
     color: white;
     font-size: 20px;
     display: flex;
@@ -952,4 +952,3 @@ a:hover {
     height: 20px;
   }
 }
-
