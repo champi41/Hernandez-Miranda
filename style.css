@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 * {
   font-family: "Lato", sans-serif;
@@ -71,9 +72,10 @@ a:hover {
   border-radius: 5px;
 }
 .titulo {
+  font-family: "Belleza", sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 80%;
+  min-height: 50%;
   align-items: center;
   justify-content: center;
 }
@@ -82,12 +84,12 @@ a:hover {
   padding: 10px;
   border-top: 10px solid white;
   border-bottom: 5px solid white;
-  font-size: 70px;
+  font-size: 100px;
   color: white;
 }
 .titulo p {
   padding: 10px;
-  font-size: 50px;
+  font-size: 75px;
   color: white;
 }
 .main2 {
@@ -112,6 +114,7 @@ a:hover {
   padding: 40px 20px;
   border-radius: 10px;
   text-align: center;
+  gap: 10px;
 }
 .especialidades div img {
   height: 100px;
@@ -170,11 +173,12 @@ a:hover {
   padding: 20px;
   border-radius: 20px;
   align-items: center;
+  gap: 10px;
 }
 .hernandez img,
 .miranda img {
-  height: 300px;
-  width: auto;
+  width: 200px;
+  height: auto;
 }
 .texto {
   font-size: 30px;
@@ -202,10 +206,10 @@ a:hover {
   gap: 20px;
 }
 .llamar {
-  width: min-content;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+  
 }
 .llamar a {
   justify-content: center;
@@ -216,18 +220,29 @@ a:hover {
   border-radius: 15px;
   gap: 5px;
 }
-.llamar a img{
+.llamar a img {
   height: 30px;
 }
 .llamar a:hover {
   background-color: rgb(88, 155, 0);
 }
-@media (max-width: 1616px){
+@media (max-width: 1616px) {
   .especialidades {
     grid-template-columns: repeat(2, 1fr);
   }
+  .hernandez,
+  .miranda {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
+  }
 }
-@media (max-width: 1373px){
+@media (max-width: 1373px) {
   .especialidades {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -291,24 +306,18 @@ a:hover {
     padding: 10px 15px;
     border-radius: 5px;
   }
-  .titulo {
-    display: flex;
-    flex-direction: column;
-    min-height: 80%;
-    align-items: center;
-    justify-content: center;
-  }
+
   .titulo h1 {
     letter-spacing: 4px;
     padding: 10px;
     border-top: 10px solid white;
     border-bottom: 5px solid white;
-    font-size: 70px;
+    font-size: 80px;
     color: white;
   }
   .titulo p {
     padding: 10px;
-    font-size: 50px;
+    font-size: 60px;
     color: white;
   }
   .main2 {
@@ -410,7 +419,7 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
-  .main5 .imgfinal{
+  .main5 .imgfinal {
     height: 700px;
     border-radius: 10px;
   }
@@ -421,10 +430,6 @@ a:hover {
     flex-direction: column;
     padding: 30px;
     gap: 20px;
-  }
-  .llamar {
-    display: flex;
-    flex-direction: column;
   }
   .llamar a {
     display: flex;
@@ -461,24 +466,18 @@ a:hover {
   header img {
     height: 70px;
   }
-  .titulo {
-    display: flex;
-    flex-direction: column;
-    min-height: 80%;
-    align-items: center;
-    justify-content: center;
-  }
+
   .titulo h1 {
     letter-spacing: 4px;
     padding: 10px;
     border-top: 7px solid white;
     border-bottom: 3px solid white;
-    font-size: 40px;
+    font-size: 50px;
     color: white;
   }
   .titulo p {
     padding: 10px;
-    font-size: 35px;
+    font-size: 40px;
     color: white;
   }
   .main2 {
@@ -594,7 +593,6 @@ a:hover {
     padding: 30px;
     gap: 20px;
   }
-  
 }
 @media (max-width: 768px) {
   .main {
@@ -620,27 +618,21 @@ a:hover {
   header img {
     height: 70px;
   }
-  .navbar{
+  .navbar {
     display: none;
   }
-  .titulo {
-    display: flex;
-    flex-direction: column;
-    min-height: 80%;
-    align-items: center;
-    justify-content: center;
-  }
+
   .titulo h1 {
     letter-spacing: 4px;
     padding: 10px;
     border-top: 7px solid white;
     border-bottom: 3px solid white;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
   }
   .titulo p {
     padding: 10px;
-    font-size: 25px;
+    font-size: 35px;
     color: white;
   }
   .main2 {
@@ -756,7 +748,6 @@ a:hover {
     padding: 30px;
     gap: 20px;
   }
-
 }
 
 @media (max-width: 576px) {
@@ -786,24 +777,18 @@ a:hover {
   .navbar {
     display: none;
   }
-  .titulo {
-    display: flex;
-    flex-direction: column;
-    min-height: 80%;
-    align-items: center;
-    justify-content: center;
-  }
+
   .titulo h1 {
     letter-spacing: 4px;
     padding: 10px;
     border-top: 7px solid white;
     border-bottom: 3px solid white;
-    font-size: 25px;
+    font-size: 6vw;
     color: white;
   }
   .titulo p {
     padding: 7px;
-    font-size: 25px;
+    font-size: 5vw;
     color: white;
   }
   .main2 {
@@ -908,6 +893,22 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
+  .llamar{
+    justify-content: center;
+  }
+  .llamar a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(51, 89, 0);
+    border-radius: 15px;
+    gap: 5px;
+    font-size: 4.5vw;
+  }
+  .llamar a img {
+    height: 30px;
+  }
   .main5 .imgfinal {
     display: none;
   }
@@ -916,8 +917,35 @@ a:hover {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0;
     gap: 20px;
   }
-  
+}
+@media (max-width: 365px) {
+  .titulo h1 {
+    letter-spacing: 4px;
+    padding: 10px;
+    border-top: 7px solid white;
+    border-bottom: 3px solid white;
+    font-size: 6vw;
+    color: white;
+  }
+  .titulo p {
+    padding: 7px;
+    font-size: 6vw;
+    color: white;
+  }
+  .llamar a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(51, 89, 0);
+    border-radius: 15px;
+    gap: 5px;
+    font-size: 3.5vw;
+  }
+  .llamar a img {
+    height: 20px;
+  }
 }
