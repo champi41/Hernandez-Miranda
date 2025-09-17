@@ -148,7 +148,7 @@ a:hover {
   position: relative;
   background-size: cover;
   background-position: center;
-  padding: 200px 40px;
+  padding: 150px 40px;
   gap: 40px;
 }
 .general,
@@ -952,3 +952,4 @@ a:hover {
     height: 20px;
   }
 }
+
