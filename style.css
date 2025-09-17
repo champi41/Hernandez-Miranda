@@ -189,7 +189,7 @@ a:hover {
   gap: 20px;
   align-items: center;
 }
-.main5 img {
+.main5 .imgfinal {
   height: 700px;
   border-radius: 10px;
 }
@@ -410,7 +410,7 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
-  .main5 img {
+  .main5 .imgfinal{
     height: 700px;
     border-radius: 10px;
   }
@@ -583,7 +583,7 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
-  .main5 img {
+  .main5 .imgfinal {
     display: none;
   }
   .main5 .divcontacto {
@@ -619,6 +619,9 @@ a:hover {
   }
   header img {
     height: 70px;
+  }
+  .navbar{
+    display: none;
   }
   .titulo {
     display: flex;
@@ -742,7 +745,7 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
-  .main5 img {
+  .main5 .imgfinal {
     display: none;
   }
   .main5 .divcontacto {
@@ -905,7 +908,7 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
-  .main5 img {
+  .main5 .imgfinal {
     display: none;
   }
   .main5 .divcontacto {
