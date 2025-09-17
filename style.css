@@ -93,7 +93,7 @@ a:hover {
   color: white;
 }
 .main2 {
-  padding: 20px;
+  padding: 60px 20px;
   display: flex;
   align-items: center;
   height: auto;
@@ -142,11 +142,14 @@ a:hover {
 }
 .main4 {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   height: auto;
-  background-color: var(--color2);
-  padding: 70px;
-  gap: 30px;
+  background-image: url('palacio.jpg');
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 40px;
+  gap: 40px;
 }
 .general,
 .individual {
@@ -154,24 +157,29 @@ a:hover {
   box-sizing: border-box;
 }
 .general {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
   font-size: 30px;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: black;
   gap: 40px;
+  padding: 20px;
+  border-radius: 15px;
 }
 .individual {
-  gap: 30px;
+  gap: 40px;
   display: flex;
   flex-direction: column;
 }
 .hernandez,
 .miranda {
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
   display: flex;
   flex: 1;
-  background-color: var(--color1);
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   align-items: center;
   gap: 10px;
 }
@@ -186,30 +194,34 @@ a:hover {
   flex-direction: column;
 }
 .main5 {
-  background-color: #7d7062;
   display: flex;
-  height: auto;
-  padding: 10px;
+  position: relative;
+  background-image: url('libros.png');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 10px;
   gap: 20px;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
 }
-.main5 .imgfinal {
-  height: 700px;
-  border-radius: 10px;
-}
+
 .main5 .divcontacto {
+  backdrop-filter: blur(10px);
   color: white;
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
   padding: 30px;
   gap: 20px;
 }
 .llamar {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  width: 100%;
   gap: 10px;
-  
+  justify-content: center;
 }
 .llamar a {
   justify-content: center;
@@ -235,7 +247,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: var(--color1);
     padding: 20px;
     border-radius: 20px;
     align-items: center;
@@ -384,7 +395,6 @@ a:hover {
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    color: white;
     gap: 40px;
   }
   .individual {
@@ -396,7 +406,6 @@ a:hover {
   .miranda {
     display: flex;
     flex: 1;
-    background-color: var(--color1);
     padding: 20px;
     border-radius: 20px;
     align-items: center;
@@ -546,7 +555,6 @@ a:hover {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    color: white;
     gap: 20px;
   }
   .individual {
@@ -558,7 +566,6 @@ a:hover {
   .miranda {
     display: flex;
     flex-direction: row;
-    background-color: var(--color1);
     padding: 20px;
     border-radius: 20px;
     align-items: center;
@@ -598,7 +605,7 @@ a:hover {
   .main {
     position: relative;
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     background-image: url("fondo.jpg");
     background-size: cover;
     background-position-x: 80%;
@@ -701,7 +708,6 @@ a:hover {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    color: white;
     gap: 20px;
   }
   .individual {
@@ -713,7 +719,6 @@ a:hover {
   .miranda {
     display: flex;
     flex-direction: row;
-    background-color: var(--color1);
     padding: 20px;
     border-radius: 20px;
     align-items: center;
@@ -733,7 +738,7 @@ a:hover {
     background-color: #7d7062;
     display: flex;
     height: auto;
-    padding: 10px 10px 40px;
+    padding: 10px;
     gap: 20px;
     align-items: center;
   }
@@ -754,7 +759,7 @@ a:hover {
   .main {
     position: relative;
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     background-image: url("fondo.jpg");
     background-size: cover;
     background-position-x: 80%;
@@ -857,7 +862,6 @@ a:hover {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    color: white;
     gap: 20px;
   }
   .individual {
@@ -869,7 +873,6 @@ a:hover {
   .miranda {
     display: flex;
     flex-direction: column;
-    background-color: var(--color1);
     padding: 20px;
     border-radius: 20px;
     align-items: center;
@@ -917,7 +920,7 @@ a:hover {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    padding: 0;
+    padding: 10px;
     gap: 20px;
   }
 }
@@ -949,6 +952,3 @@ a:hover {
     height: 20px;
   }
 }
-
-
-
