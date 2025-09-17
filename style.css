@@ -80,6 +80,8 @@ a:hover {
   justify-content: center;
 }
 .titulo h1 {
+  -webkit-text-stroke: 3px black;
+  text-stroke: 3px black;
   letter-spacing: 4px;
   padding: 10px;
   border-top: 10px solid white;
@@ -88,6 +90,8 @@ a:hover {
   color: white;
 }
 .titulo p {
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
   padding: 10px;
   font-size: 75px;
   color: white;
@@ -144,7 +148,7 @@ a:hover {
   display: flex;
   align-items: stretch;
   height: auto;
-  background-image: url('palacio.jpg');
+  background-image: url("palacio.jpg");
   position: relative;
   background-size: cover;
   background-position: center;
@@ -196,7 +200,7 @@ a:hover {
 .main5 {
   display: flex;
   position: relative;
-  background-image: url('libros.png');
+  background-image: url("libros.png");
   background-size: cover;
   background-position: center;
   padding: 50px 10px;
@@ -477,6 +481,8 @@ a:hover {
   }
 
   .titulo h1 {
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
     letter-spacing: 4px;
     padding: 10px;
     border-top: 7px solid white;
@@ -485,6 +491,8 @@ a:hover {
     color: white;
   }
   .titulo p {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
     padding: 10px;
     font-size: 40px;
     color: white;
@@ -784,16 +792,20 @@ a:hover {
   }
 
   .titulo h1 {
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
     letter-spacing: 4px;
     padding: 10px;
     border-top: 7px solid white;
     border-bottom: 3px solid white;
-    font-size: 6vw;
+    font-size: 6.5vw;
     color: white;
   }
   .titulo p {
+    -webkit-text-stroke: 0.5px black;
+    text-stroke: 0.5px black;
     padding: 7px;
-    font-size: 5vw;
+    font-size: 5.5vw;
     color: white;
   }
   .main2 {
@@ -896,7 +908,7 @@ a:hover {
     gap: 20px;
     align-items: center;
   }
-  .llamar{
+  .llamar {
     justify-content: center;
   }
   .llamar a {
