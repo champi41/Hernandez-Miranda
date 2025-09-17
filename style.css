@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
-  font-family: "Belleza", sans-serif;
+  font-family: "Lato", sans-serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -90,13 +91,13 @@ a:hover {
   color: white;
 }
 .main2 {
+  padding: 20px;
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background-color: var(--color1);
 }
 .especialidades {
-  padding: 0px 20px;
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -108,7 +109,6 @@ a:hover {
   font-size: 30px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 5px black;
   padding: 40px 20px;
   border-radius: 10px;
   text-align: center;
@@ -121,7 +121,7 @@ a:hover {
   display: flex;
   align-items: center;
   background-color: var(--color3);
-  height: 100vh;
+  height: auto;
   padding: 20px 70px;
 }
 .main3 ul {
@@ -140,7 +140,7 @@ a:hover {
 .main4 {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: auto;
   background-color: var(--color2);
   padding: 70px;
   gap: 30px;
@@ -184,13 +184,13 @@ a:hover {
 .main5 {
   background-color: #7d7062;
   display: flex;
-  height: 100vh;
+  height: auto;
   padding: 10px;
   gap: 20px;
   align-items: center;
 }
 .main5 img {
-  height: 100%;
+  height: 700px;
   border-radius: 10px;
 }
 .main5 .divcontacto {
@@ -214,7 +214,221 @@ a:hover {
 .llamar a:hover {
   background-color: rgb(88, 155, 0);
 }
-@media (max-width: 576px) {
+@media (max-width: 1616px){
+  .especialidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1373px){
+  .especialidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: var(--color2);
+    padding: 70px;
+    gap: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header img {
+    height: 70px;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  .contacto {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo h1 {
+    letter-spacing: 4px;
+    padding: 10px;
+    border-top: 10px solid white;
+    border-bottom: 5px solid white;
+    font-size: 70px;
+    color: white;
+  }
+  .titulo p {
+    padding: 10px;
+    font-size: 50px;
+    color: white;
+  }
+  .main2 {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: var(--color1);
+  }
+  .especialidades {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+  .especialidades div {
+    background-color: var(--color2);
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .especialidades div img {
+    height: 100px;
+    width: auto;
+  }
+  .main3 {
+    display: flex;
+    align-items: center;
+    background-color: var(--color3);
+    height: auto;
+    padding: 20px 70px;
+  }
+  .main3 ul {
+    color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main3 li {
+    border-bottom: 2px solid var(--color2);
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main4 {
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: var(--color2);
+    padding: 70px;
+    gap: 30px;
+  }
+  .general,
+  .individual {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .general {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 40px;
+  }
+  .individual {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hernandez,
+  .miranda {
+    display: flex;
+    flex: 1;
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .hernandez img,
+  .miranda img {
+    height: 300px;
+    width: auto;
+  }
+  .texto {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main5 {
+    background-color: #7d7062;
+    display: flex;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+  }
+  .main5 img {
+    height: 700px;
+    border-radius: 10px;
+  }
+  .main5 .divcontacto {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+  .llamar {
+    display: flex;
+  }
+  .llamar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(51, 89, 0);
+    border-radius: 15px;
+  }
+  .llamar a:hover {
+    background-color: rgb(88, 155, 0);
+  }
+}
+@media (max-width: 992px) {
   .main {
     position: relative;
     width: 100%;
@@ -238,8 +452,176 @@ a:hover {
   header img {
     height: 70px;
   }
-  .navbar {
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo h1 {
+    letter-spacing: 4px;
+    padding: 10px;
+    border-top: 7px solid white;
+    border-bottom: 3px solid white;
+    font-size: 40px;
+    color: white;
+  }
+  .titulo p {
+    padding: 10px;
+    font-size: 35px;
+    color: white;
+  }
+  .main2 {
+    display: flex;
+    min-height: max-content;
+    align-items: center;
+    background-color: var(--color1);
+    padding: 10px;
+  }
+  .especialidades {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 10px;
+  }
+  .especialidades div {
+    background-color: var(--color2);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+  }
+  .especialidades div img {
+    height: 50px;
+    width: auto;
+  }
+  .main3 {
+    display: flex;
+    height: min-content;
+    align-items: center;
+    background-color: var(--color3);
+    padding: 10px;
+  }
+  .main3 ul {
+    color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main3 li {
+    border-bottom: 2px solid var(--color2);
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: var(--color2);
+    padding: 10px;
+    gap: 10px;
+  }
+  .general,
+  .individual {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .general {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+  }
+  .individual {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hernandez,
+  .miranda {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .hernandez img,
+  .miranda img {
+    height: 200px;
+    width: auto;
+  }
+  .texto {
+    gap: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main5 {
+    background-color: #7d7062;
+    display: flex;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+  }
+  .main5 img {
     display: none;
+  }
+  .main5 .divcontacto {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+  .llamar {
+    display: flex;
+  }
+  .llamar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(51, 89, 0);
+    border-radius: 15px;
+  }
+  .llamar a:hover {
+    background-color: rgb(88, 155, 0);
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position-x: 80%;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header img {
+    height: 70px;
   }
   .titulo {
     display: flex;
@@ -280,7 +662,181 @@ a:hover {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 5px 5px black;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 10px;
+  }
+  .especialidades div img {
+    height: 50px;
+    width: auto;
+  }
+  .main3 {
+    display: flex;
+    height: min-content;
+    align-items: center;
+    background-color: var(--color3);
+    padding: 10px;
+  }
+  .main3 ul {
+    color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .main3 li {
+    border-bottom: 2px solid var(--color2);
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: var(--color2);
+    padding: 10px;
+    gap: 10px;
+  }
+  .general,
+  .individual {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .general {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+  }
+  .individual {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hernandez,
+  .miranda {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .hernandez img,
+  .miranda img {
+    height: 200px;
+    width: auto;
+  }
+  .texto {
+    gap: 5px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main5 {
+    background-color: #7d7062;
+    display: flex;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+  }
+  .main5 img {
+    display: none;
+  }
+  .main5 .divcontacto {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+  }
+  .llamar {
+    display: flex;
+  }
+  .llamar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(51, 89, 0);
+    border-radius: 15px;
+  }
+  .llamar a:hover {
+    background-color: rgb(88, 155, 0);
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    background-position-x: 80%;
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  header img {
+    height: 70px;
+  }
+  .navbar {
+    display: none;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo h1 {
+    letter-spacing: 4px;
+    padding: 10px;
+    border-top: 7px solid white;
+    border-bottom: 3px solid white;
+    font-size: 25px;
+    color: white;
+  }
+  .titulo p {
+    padding: 7px;
+    font-size: 25px;
+    color: white;
+  }
+  .main2 {
+    display: flex;
+    min-height: max-content;
+    align-items: center;
+    background-color: var(--color1);
+    padding: 10px;
+  }
+  .especialidades {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+  }
+  .especialidades div {
+    background-color: var(--color2);
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
     padding: 40px 20px;
     border-radius: 10px;
     text-align: center;
