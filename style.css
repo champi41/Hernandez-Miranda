@@ -40,7 +40,7 @@ body {
 header {
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 header img {
   height: 70px;
@@ -176,7 +176,6 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-.hernandez,
 .miranda {
   background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
@@ -187,7 +186,6 @@ a:hover {
   align-items: center;
   gap: 10px;
 }
-.hernandez img,
 .miranda img {
   width: 200px;
   height: auto;
@@ -242,7 +240,7 @@ a:hover {
 .llamar a:hover {
   background-color: rgb(88, 155, 0);
 }
-.main6{
+.main6 {
   padding: 40px 20px;
   gap: 20px;
   background-color: #282626;
@@ -251,7 +249,7 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
 }
-.card{
+.card {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -264,27 +262,29 @@ a:hover {
   cursor: pointer;
   height: min-content;
 }
-.mas{
+.mas {
   color: rgba(0, 0, 0, 0.75);
   font-weight: 600;
   display: flex;
   justify-content: center;
 }
-.todo{
+.todo {
   max-height: 0; /* Oculta el contenido por defecto */
   overflow: hidden;
-  transition: max-height 0.5s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.3s ease;
   opacity: 0;
 }
-.card.expanded .todo{
+.card.expanded .todo {
   max-height: 100%; /* Una altura suficientemente grande para mostrar el contenido */
   opacity: 1;
   transition: all 0.3s ease;
 }
-.card.expanded .resumen{
+.card.expanded .resumen {
   display: none;
 }
-.card.expanded .mas{
+.card.expanded .mas {
   display: none;
 }
 
@@ -292,7 +292,16 @@ a:hover {
   .especialidades {
     grid-template-columns: repeat(2, 1fr);
   }
-  .hernandez,
+  .miranda {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
+  }
+
   .miranda {
     display: flex;
     flex-direction: column;
@@ -452,7 +461,6 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  .hernandez,
   .miranda {
     display: flex;
     flex: 1;
@@ -460,7 +468,6 @@ a:hover {
     border-radius: 20px;
     align-items: center;
   }
-  .hernandez img,
   .miranda img {
     height: 300px;
     width: auto;
@@ -500,7 +507,7 @@ a:hover {
   .llamar a:hover {
     background-color: rgb(88, 155, 0);
   }
-  .main6{
+  .main6 {
     flex-direction: column;
   }
 }
@@ -619,7 +626,6 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  .hernandez,
   .miranda {
     display: flex;
     flex-direction: row;
@@ -627,7 +633,6 @@ a:hover {
     border-radius: 20px;
     align-items: center;
   }
-  .hernandez img,
   .miranda img {
     height: 200px;
     width: auto;
@@ -772,7 +777,6 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  .hernandez,
   .miranda {
     display: flex;
     flex-direction: row;
@@ -780,7 +784,6 @@ a:hover {
     border-radius: 20px;
     align-items: center;
   }
-  .hernandez img,
   .miranda img {
     height: 200px;
     width: auto;
@@ -810,10 +813,10 @@ a:hover {
     padding: 30px;
     gap: 20px;
   }
-  .main6{
+  .main6 {
     flex-direction: column;
   }
-  .card{
+  .card {
     font-size: 20px;
   }
 }
@@ -936,7 +939,6 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  .hernandez,
   .miranda {
     display: flex;
     flex-direction: column;
@@ -944,7 +946,6 @@ a:hover {
     border-radius: 20px;
     align-items: center;
   }
-  .hernandez img,
   .miranda img {
     height: 200px;
     width: auto;
