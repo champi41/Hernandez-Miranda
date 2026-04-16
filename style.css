@@ -325,6 +325,21 @@ header {
   background: #ffffff;
 }
 
+.certificado-preview {
+  width: 100%;
+  aspect-ratio: 8.5 / 11;
+  object-fit: cover;
+  border: 1px solid #c9c2b6;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.certificado-nota {
+  font-size: 0.95rem;
+  color: #4d5c68;
+  font-weight: 600;
+}
+
 .pdf-fallback {
   font-size: 0.98rem;
   color: #32414e;
@@ -586,6 +601,10 @@ header {
 
   .pdf-viewer {
     display: none;
+  }
+
+  .certificado-preview {
+    display: block;
   }
 
   .documento-acciones {
