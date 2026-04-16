@@ -316,7 +316,7 @@ header {
   color: #1f2a34;
 }
 
-.documento-card iframe {
+.pdf-viewer {
   width: 100%;
   aspect-ratio: 8.5 / 11;
   height: auto;
@@ -325,8 +325,24 @@ header {
   background: #ffffff;
 }
 
+.pdf-fallback {
+  font-size: 0.98rem;
+  color: #32414e;
+  padding: 12px;
+}
+
+.pdf-fallback a {
+  color: #7a5a22;
+  font-weight: 700;
+}
+
+.documento-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .documento-card a {
-  justify-self: start;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -568,8 +584,16 @@ header {
     font-size: 1.6rem;
   }
 
-  .documento-card iframe {
-    aspect-ratio: 8.5 / 12.5;
+  .pdf-viewer {
+    display: none;
+  }
+
+  .documento-acciones {
+    width: 100%;
+  }
+
+  .documento-acciones a {
+    flex: 1 1 100%;
   }
 
   .resumen,
