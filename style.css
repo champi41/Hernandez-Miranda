@@ -464,6 +464,7 @@ header {
 
 .telefono h2,
 .correo h2,
+.direccion h2,
 .localidades h2 {
   font-size: 1.15rem;
   font-family: "Source Sans 3", sans-serif;
@@ -508,6 +509,35 @@ header {
 .llamar a img {
   width: 20px;
   height: 20px;
+}
+
+.mapa-oficina {
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.mapa-oficina iframe {
+  width: 100%;
+  height: 340px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+}
+
+.mapa-oficina a {
+  justify-self: start;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.98rem;
+  font-weight: 700;
+  background: #f2cd84;
+  color: #17212b;
+}
+
+.mapa-oficina a:hover {
+  background: #ffe0a2;
 }
 
 @media (max-width: 1180px) {
@@ -613,6 +643,26 @@ header {
 
   .documento-acciones a {
     flex: 1 1 100%;
+  }
+
+  .llamar {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .llamar a {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .mapa-oficina iframe {
+    height: 280px;
+  }
+
+  .mapa-oficina a {
+    width: 100%;
+    justify-content: center;
   }
 
   .resumen,
